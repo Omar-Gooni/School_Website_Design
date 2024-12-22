@@ -1,0 +1,795 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --color1:green;
+    --color2:yellow;
+}
+section .icon{
+    width: 100%;
+    padding: 10px;
+    background:var(--color1);
+    text-align: right;
+    color: var(--color2);
+}
+.header{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background: whitesmoke;
+    display: table;
+    content: "";
+}
+.header .log{
+    float: left;
+}
+.header .nav{
+    float: right;
+    padding: 17px;
+    font-weight: 700;
+   
+}
+.header .nav a{
+    margin-right: 50px;
+    text-decoration: none;
+    
+}
+
+.header .nav a:hover{
+    color: red;
+    background: greenyellow;
+}
+.header .nav a.active{
+    padding: 7px;
+    background: var(--color1);
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid var(--color1);
+ }
+.header .nav a.active:hover{
+    background: greenyellow;
+    color: red;
+    
+}
+.header .log span:first-child{
+    color: blueviolet;
+    font-weight: 700;
+    font-size: 2em;
+}
+.header .log span:nth-child(2){
+    color: orangered;
+    font-weight: 700;
+    font-size: 2em;   
+}
+.slide{
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    background: linear-gradient(to right, rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(interior-of-a-traditional-school-classroom-with-wooden-floor-and-furniture.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: rgb(59, 237, 0);
+    position: relative;
+    font-size: 2em;
+}
+.slide h3{
+    font-size: 1em;
+    color: var(--color2);
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-weight: 800;
+}
+.slide p{
+    color:white;
+    margin-top: 10px; 
+}
+.slide.btn{
+    padding: 30px;
+    font-size:2em;
+    margin: 10px;
+    border-radius: 10px;
+    }
+.btn:hover{
+    background: #ffee47;
+    letter-spacing: 5px;
+}
+.hoos{
+    width:100%;
+    
+}
+.hoos .student, .hoos .portal, .hoos .life{
+    width: 33.33%;
+    float: left;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+}
+.hoos span{
+    display: block;
+    font-weight: 100;
+    font-size: 0.5em;
+}
+.hoos .student{
+    background:linear-gradient(#b23f457d,#b23f457d,#b23f457d),url(../images/school.webp);
+}
+.hoos .portal{
+    background:linear-gradient(#80542543,#80542546,#80542549),url(../images/school.webp);
+}
+.hoos .life{
+    background:linear-gradient(#1e656487,#1e656487,#1e656487),url(../images/school.webp); 
+}
+.main{
+    clear: both;
+    padding: 20px 3%;
+    display: table;
+    content: "";
+    width: 100%;
+}
+.main .row{
+    width: 100%;
+}
+.main .row .content, .main .row .images{
+    width: 48%;
+}
+.main .row .content h3{
+    font-size: 2em;
+    font-weight: 900;
+}
+.main .row .content{
+    float: left;
+}
+.main .row .images{
+    float: right;
+}
+.main .row .images .pig{
+    width: 48%;
+    float: left;
+   
+}
+.main .row .images .pig img{
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+}
+.main .row .images .small{
+    width: 50%;
+    float: right;
+   
+}
+.main .row .images .small img{
+    width: 100%;
+    height: 170px;
+    border-radius: 10px;
+}
+.program{
+    width: 100%;
+    clear: both;
+    display: table;
+    content: "";
+   padding: 20px;
+}
+/* .main .row{
+    clear: both;
+    display: table;
+    content: "";
+    margin-bottom: 20px;
+  } */
+  .program h1 , .program h3{
+    text-align: center;
+  }
+  .program h1{
+    color: var(--color1);
+  }
+  .program h3{
+    font-size: 1.5em;
+  }
+  .program .adegyada{
+    width: 100%;
+  }
+  .adegyada .adega{
+    width: 30%;
+    margin: 1.6%;
+    float: left;
+  }
+  .adega .goni{
+    float: left;
+    min-width: 80px;
+    font-size: 3em;
+    color: orange;
+  }
+  .adega .text h4{
+    font-size: 1.3em;
+    margin-top: 10px;
+  }
+#showmenu{
+    /* position: absolute; */
+    display: none;
+}
+.header label{
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    display: none;
+    cursor: pointer;
+}
+
+
+
+
+.cagaar{
+    clear: both;
+    display: table;
+    content: "";
+    width: 100%;
+    background: var(--color1);
+
+}
+.cagaar h1, .cagaar h3{
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+.cagaar h1{
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 700;
+    /* padding: 20px; */
+    
+}
+.cagaar h3{
+    font-size: 0.8em;
+    margin-top: -40px;
+
+}
+.cagaar .qeybaha{
+    width: 100%;
+    text-align: center;
+}
+.cagaar .qeybaha .qeybt{
+    width: 30%;
+    float: left;
+    margin:1.6%;
+}
+.qeybt .con{
+    color:yellow;
+    font-size: 4em;
+    
+}
+.qeybt .qoral{
+    color: white;
+    font-size: 1em;
+    margin: 20px 0px;
+    
+}
+.qeybt .qoral h2{
+    margin-bottom: 10px;
+}
+/* .qeybt .qoral{
+    text-align: center;
+    color: white;
+} */
+.parents{
+    clear: both;
+    display: table;
+    content: "";
+    width: 100%;
+    margin-top: 20px;
+}
+.parents h3, .parents h1{
+    text-align: center;
+   
+}
+.parents h3{
+    color: var(--color1);
+    text-transform: uppercase;
+}
+.parents h1{
+    font-size: 2em;
+    font-weight: bold;
+}
+.parents .xirmoyin{
+    width: 100%;
+}
+.xirmoyin .xirmo .sawir{
+    width: 48%;
+    float: left;
+    margin: 1%;
+    
+}
+.xirmoyin .xirmo .xog{
+width: 48%;
+float: right;
+margin: 1%;
+
+}
+.xirmoyin .xirmo img{
+    width: 500px;
+    height:500px;
+}
+.xirmoyin .xirmo .xog .quotion{
+    margin-left: 20px;
+    font-size: 2em;
+    color: var(--color1);
+}
+.bilow{
+    position: relative;
+    width: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../images/interior-of-a-traditional-school-classroom-with-wooden-floor-and-furniture.webp);
+    height: 120px;
+    padding-top: 10px;
+}
+.bilow .bttn{
+    position: absolute;
+    right: 35px;
+    
+}
+.bilow h3{
+    color: #e5d524;
+    padding-top: 10px;
+    font-size: 2em;
+    margin-left: 30px;
+    font-weight: 700;
+    font-family: serif;
+}
+.bilow p{
+    color: white;
+    padding-top: 10px;
+    margin-left: 30px;
+}
+ section .sec{
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+}
+section .sec .adil{
+    width: 100%;
+}
+section .sec .adil .logo,section .sec .adil .wadar{
+    width: 45%;
+    float: left;
+}
+.wadar h3{
+    color: var(--color1);
+    margin-bottom: 0.5px;
+    font-size: 1.5em;
+
+}
+.wadar h1{
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+/* .wadar .king{
+    width: 100%;
+} */
+.wadar .king div{
+    width: 30%;
+    float: left;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 1px var(--color1);
+    /* margin: 2.5%; */
+}
+.wadar p{
+    clear: both;
+}
+.wadar{
+    border-left: 1px solid var(--color1);
+    padding-left: 15px;
+}
+.wadar .king div:first-child{
+    background: var(--color1);
+    padding: 5px;
+    text-align: center;
+    color: white;
+    border-radius: 5px 0 0 0;
+}
+.wadar .king div:nth-child(2){
+    text-align: center;
+    padding: 5px;
+}
+.wadar .king div:last-child{
+    text-align: center;
+    padding: 5px;
+}
+.siitam{
+    clear: both;
+    display: table;
+    content: "";
+    width: 100%;
+    /* background: var(--color1); */
+
+}
+.siitam h1, .siitam h3{
+    text-align: center;
+    color: black;
+    padding: 30px;
+}
+.siitam h1{
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 700;
+    /* padding: 20px; */
+    
+}
+.siitam h3{
+    font-size: 0.8em;
+    margin-top: -40px;
+
+}
+.siitam .courses{
+    width: 100%;
+    text-align: center;
+}
+.siitam .courses .cours{
+    width: 30%;
+    float: left;
+    margin:1.6%;
+}
+.cours .con22{
+    /* color:yellow; */
+    font-size: 4em;
+    
+}
+.cours .aqon{
+    color: black;
+    font-size: 1em;
+    margin: 20px 0px;
+    
+}
+.cours .aqon h2{
+    margin-bottom: 10px;
+}
+.siitam .what{
+    color: var(--color1);
+    padding-top: 50px;
+}
+.con22 .book{
+    color: rgb(6, 203, 134);
+}
+.con22 .quu{
+    color: rgb(28, 27, 27);
+}
+.con22 .solid{
+    color: rgb(251, 78, 4);
+}
+.bilow22{
+    position: relative;
+    width: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../images/logo.jpg);
+    height: 120px;
+    padding-top: 10px;
+}
+
+.bilow22 h3{
+    color: #e5d524;
+    padding-top: 10px;
+    font-size: 2em;
+    margin-left: 30px;
+    font-weight: 700;
+    font-family: serif;
+}
+.bilow22 p{
+    color: white;
+    padding-top: 10px;
+    margin-left: 30px;
+}
+section .explore{
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+section .explore h1{
+    margin-bottom: 20px;
+}
+section .explore p{
+    padding: 5px;
+}
+section .kiddies .caruur{
+    width: 100%;
+}
+section .kiddies .caruur .cunug, section .kiddies .caruur .kid{
+    width: 45%;
+    float: left;
+    margin: 2%;
+}
+.kid .kidd{
+    background: #ffee47;
+    font-size: 1em;
+    border-radius: 20px;
+}
+section .kiddies11{
+    clear: both;
+    display: table;
+    content: "";
+    margin-top: 20px;
+}
+section .kiddies11 .caruur11{
+    width: 100%;
+}
+section .kiddies11 .caruur11 .cunug11, section .kiddies11 .caruur11 .kid11{
+    width: 45%;
+    float: left;
+    margin: 2%;
+}
+.kid11 .kidd11{
+    background: #ffee47;
+    font-size: 1em;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+ @media screen and (max-width: 1024px){
+    .main .row .content{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .main .row .images{
+        width: 100%;
+    }
+    .program .adegyada{
+        width: 100%;
+        
+    }
+    .adega .goni{
+        width: 100%;
+
+    }
+    .cagaar{
+        width: 100%;
+    }
+    .cagaar .qeybaha{
+        width: 100%;
+    }
+    .qeybaha .qeybt{
+        width: 100%;
+    }
+    .parents{
+        width: 100%;
+    }
+    .parents .xirmoyin{
+        width: 100%;
+    }
+    .xirmoyin .xirmo{
+        width: 100%;
+    }
+    .xirmoyin .xirmo .sawir{
+        width: 100%;
+    }
+    .xirmoyin .xirmo .xog{
+        width: 100%;
+    }
+    
+    .xirmoyin .xirmo .xog .quotion{
+        width: 100%;
+    }
+   
+    
+        .header .nav{
+        display:none;
+        width: 100%;
+        margin-top: 10px;
+        background: whitesmoke;
+        
+    }
+    .header label{
+        display: inline-block;
+    }
+    .header .nav a{
+        display: block;
+        padding: 10px;
+        text-align: center;
+        border: 1px solid wheat;
+        border-radius: 20px;
+    }
+    #showmenu:checked ~.nav{
+        display: inline-block;
+    }
+    
+    .bilow{
+        width: 100%;
+    }
+    .bilow .bttn{
+       width: 100%;
+        
+    }
+    .bilow h3{
+        width: 100%;
+    }
+    .bilow p{
+        width: 100%;
+    }
+     section .sec{
+        width: 100%;
+    }
+    section .sec .adil{
+        width: 100%;
+    }
+    section .sec .adil .logo,section .sec .adil .wadar{
+        width: 100%;
+    }
+    .wadar h3{
+        width: 100%;
+    
+    }
+    .wadar h1{
+        width: 100%;
+    }
+    /* .wadar .king{
+        width: 100%;
+    } */
+    .wadar .king div{
+        width: 100%;
+    }
+    .wadar p{
+        width: 100%;
+    }
+    .wadar{
+        width: 100%;
+    }
+    .wadar .king div:first-child{
+        width: 100%;
+    }
+    .wadar .king div:nth-child(2){
+        width: 100%;
+    }
+    .wadar .king div:last-child{
+        width: 100%;
+    }
+    .siitam{
+        width: 100%;
+    
+    }
+    .siitam h1, .siitam h3{
+        width: 100%;
+    }
+    .siitam h1{
+        width: 100%;
+        
+    }
+    .siitam h3{
+        width: 100%;
+    
+    }
+    .siitam .courses{
+        width: 100%;
+    }
+    .siitam .courses .cours{
+        width: 100%;
+    }
+    .cours .con22{
+        width: 100%;
+        
+    }
+    .cours .aqon{
+        width: 100%;
+        
+    }
+    .cours .aqon h2{
+        width: 100%;
+    }
+    .siitam .what{
+        width: 100%;
+    }
+    .con22 .book{
+        color: rgb(6, 203, 134);
+    }
+    .con22 .quu{
+        color: rgb(28, 27, 27);
+    }
+    .con22 .solid{
+        color: rgb(251, 78, 4);
+    }
+    .bilow22{
+        position: relative;
+        width: 100%;
+        background: linear-gradient(to right, rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../images/logo.jpg);
+        height: 120px;
+        padding-top: 10px;
+    }
+    
+    .bilow22 h3{
+        color: #e5d524;
+        padding-top: 10px;
+        font-size: 2em;
+        margin-left: 30px;
+        font-weight: 700;
+        font-family: serif;
+    }
+    .bilow22 p{
+        color: white;
+        padding-top: 10px;
+        margin-left: 30px;
+    }
+    section .explore{
+        margin-top: 30px;
+        width: 100%;
+        text-align: center;
+    }
+    section .explore h1{
+        margin-bottom: 20px;
+    }
+    section .explore p{
+        padding: 5px;
+    }
+    section .kiddies .caruur{
+        width: 100%;
+    }
+    section .kiddies .caruur .cunug, section .kiddies .caruur .kid{
+        width: 45%;
+        float: left;
+        margin: 2%;
+    }
+    .kid .kidd{
+        background: #ffee47;
+        font-size: 1em;
+        border-radius: 20px;
+    }
+    section .kiddies11{
+        clear: both;
+        display: table;
+        content: "";
+        margin-top: 20px;
+    }
+    section .kiddies11 .caruur11{
+        width: 100%;
+    }
+    section .kiddies11 .caruur11 .cunug11, section .kiddies11 .caruur11 .kid11{
+        width: 45%;
+        float: left;
+        margin: 2%;
+    }
+    .kid11 .kidd11{
+        background: #ffee47;
+        font-size: 1em;
+        border-radius: 20px;
+    }
+
+     }
+   
+   
+    
+
+
+
+
+
+
+
+
+
+
